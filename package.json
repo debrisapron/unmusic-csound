@@ -1,6 +1,15 @@
 {
   "name": "unmusic-csound",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "require-from-string": "^2.0.2"
+  },
+  "devDependencies": {
+    "jest": "^23.3.0"
+  }
 }
