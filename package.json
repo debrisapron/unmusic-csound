@@ -2,6 +2,9 @@
   "name": "unmusic-csound",
   "version": "0.1.0",
   "main": "index.js",
+  "bin": {
+    "umcs": "bin/umcs.js"
+  },
   "license": "MIT",
   "scripts": {
     "test": "jest"
