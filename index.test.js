@@ -12,6 +12,13 @@ it('can convert a simple unmusic script into a csound score', () => {
   expect(trimLines(csScore)).toBe(trimLines(expectedScore))
 })
 
+it('can handle csound params p5 and above while ignoring all others', () => {
+  let script = `return arrange(1, 'p4=4 p5=5 p7=7 foo=bar A')`
+  let expectedScore = `i 1 0 0.25 440 5 0 7`
+  let csScore = csScoreFromJs(script)
+  expect(trimLines(csScore)).toBe(trimLines(expectedScore))
+})
+
 let trimLines = (str) =>
   str
     .split('\n')
